@@ -1,0 +1,25 @@
+[project]
+name = "llm-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "miguel-kjh", email = "miguelangel.kjh@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2026.10.18",
+    "datasets>=3.0.0",
+    "dotenv>=0.9.9",
+    "litellm>=1.106.0",
+    "mcp>=2.3.0",
+    "pydantic>=2.14.1",
+    "tavily>=1.1.0",
+]
+
+[project.scripts]
+llm-agent = "llm_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
